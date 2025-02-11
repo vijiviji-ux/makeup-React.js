@@ -1,0 +1,344 @@
+.skin_slide img{
+    width: 100%;
+    height: auto;
+}
+/* Main container for image cards */
+.image-gallerys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  /* Individual card styles */
+  .image-cards {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .images {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  /* Card content styling */
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .offer {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e91e63;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  /* Carousel Container */
+.carousel-containers {
+    padding: 30px;
+    background-color: purple;
+    margin-left: 30px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  .carousel-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: lawngreen;
+    margin-bottom: 10px;
+  }
+  
+  /* Carousel Wrapper */
+  .carousel-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+  }
+  
+  .carousel-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on Chrome/Safari */
+  }
+  
+  /* Carousel Items */
+  .carousel {
+    display: flex;
+    gap: 16px;
+    scroll-snap-align: start;
+  }
+  
+  /* Individual Cards */
+  .cards {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cards:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Product Image */
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  /* Rating Section */
+  .rating {
+    font-size: 14px;
+    color: darkgreen;
+    margin-bottom: 5px;
+  }
+  
+  /* Product Details */
+  .product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 5px;
+  }
+  
+  .product-size {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  /* Price Section */
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e91e63;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 5px;
+  }
+  
+  .discount {
+    color: #388e3c;
+    margin-left: 5px;
+  }
+  .skin_slider img{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+/* Curated Stores Container */
+.curated-stores-container {
+    padding: 20px;
+    background-color: #fce4ec;
+    text-align: center;
+  }
+  
+  .curated-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d81b60;
+    margin-bottom: 20px;
+  }
+  
+  /* Carousel Wrapper */
+  .curated-stores-carousel {
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    scroll-snap-type: x mandatory;
+  }
+  
+  .curated-stores-carousel::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  /* Individual Circular Card */
+  .curated-card {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    scroll-snap-align: center;
+    margin-left: 8%;
+  }
+  
+  .curated-image-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e91e63;
+    background: white;
+  }
+  
+  .curated-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .curated-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 8px;
+  }
+  .footer {
+    background-color: deeppink;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Footer content */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer links */
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social media links */
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .footer-links,
+    .social-media {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .footer-links a,
+    .social-media a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .curated-card {
+      width: 100px;
+    }
+  
+    .curated-image-wrapper {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .curated-label {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .curated-card {
+      width: 80px;
+    }
+  
+    .curated-image-wrapper {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .curated-label {
+      font-size: 10px;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards {
+      width: 120px;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .image-cards {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-cards {
+      width: 100%;
+    }
+  }
+  

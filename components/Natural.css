@@ -1,0 +1,228 @@
+.carouselss {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1500px;
+    margin: 20px auto;
+}
+
+.carousel-containerss {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+}
+
+.carousel-containerss::-webkit-scrollbar {
+    display: none; 
+}
+
+.carousel-slides {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slides img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.prevs,
+button.nexts {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+button.prevs {
+    left: 10px;
+}
+
+button.nexts {
+    right: 10px;
+}
+
+button.prevs:hover,
+button.nexts:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+  
+  /* Flex Grid Container */
+  .image-grids {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 40px;
+  }
+  
+.imagee-item > .off{
+    text-align: center;
+}
+  
+  /* Flex Items */
+  .imagee-item {
+    flex: 1 1 calc(25% - 20px); /* 25% width with space for gaps */
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .imagee-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+
+  
+  /* Container Styling */
+  .things {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #f9f9f9, #e3e3e3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 35px;
+  }
+  
+  /* Heading Styling */
+  .things h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation: slide-in 2s ease-in-out, glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Text Animation: Slide In */
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Glow Effect Animation */
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(0, 255, 128, 0.5);
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(0, 255, 128, 1), 0 0 30px rgba(0, 255, 128, 1);
+    }
+  }
+
+
+  
+  /* Flexbox Container for Images */
+  .image-row {
+    display: flex;
+    justify-content: space-around; /* Adjust space between items */
+    align-items: center;
+    flex-wrap: wrap; /* Enable wrapping on small screens */
+    padding: 10px;
+    gap: 10px; /* Space between items */
+    margin-top: 30px;
+  }
+  
+  /* Flex Items */
+  .image-iteem {
+    flex: 1 1 calc(25% - 20px); /* 25% width with space for gaps */
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .image-iteem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  .slide_nature img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  .footer {
+    background-color: deeppink;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Footer content */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .image-iteem {
+      flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-iteem {
+      flex: 1 1 calc(100% - 20px); /* Single column on small screens */
+      max-width: calc(100% - 20px);
+    }
+  }
+  
+  
+  /* Responsive Font Sizes */
+  @media (max-width: 768px) {
+    .things h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .things h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .imagee-item {
+      flex: 1 1 calc(50% - 20px); /* Switch to 2 columns on smaller screens */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imagee-item {
+      flex: 1 1 calc(100% - 20px); /* Single column on very small screens */
+      max-width: calc(100% - 20px);
+    }
+  }
+  
+@media (max-width: 768px) {
+    .carouselss {
+        max-width: 100%;
+    }
+}
